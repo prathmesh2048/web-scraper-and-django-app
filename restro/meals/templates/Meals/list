@@ -1,0 +1,57 @@
+<h1>Meals list</h1>
+{% for meals in meal_list %}
+<h2><a href="{% url 'meals:meal_detail' meals.slug %}">{{meals}}</a></h2>
+{% endfor %}
+
+    <!-- loader -->
+    <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#f4b214"/></svg></div>
+
+    <script src="{% static 'sites_static/js/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'sites_static/js/jquery-migrate-3.0.1.min.js' %}"></script>
+    <script src="{% static 'sites_static/js/popper.min.js' %}"></script>
+    <script src="{% static 'sites_static/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'sites_static/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'sites_static/js/jquery.waypoints.min.js' %}"></script>
+
+    <script src="{% static 'sites_static/js/bootstrap-datepicker.js' %}"></script>
+    <script src="{% static 'sites_static/js/jquery.timepicker.min.js' %}"></script>
+    <script src="{% static 'sites_static/js/jquery.stellar.min.js' %}"></script>
+
+    <script src="{% static 'sites_static/js/aos.js' %}"></script>
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+
+    <script src="{% static 'sites_static/js/main.js' %}"></script>
+
+
+
+
+  <head>
+   <title>Colorlib Diner</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:300,400,700,800|Open+Sans:300,400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'sites_static/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'sites_static/css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'sites_static/css/owl.carousel.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'sites_static/css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'sites_static/css/aos.css' %}">
+
+    <link rel="stylesheet" href="{% static 'sites_static/css/bootstrap-datepicker.css' %}">
+    <link rel="stylesheet" href="{% static 'sites_static/css/jquery.timepicker.css' %}">
+
+    <link rel="stylesheet" href="{% static 'sites_static/fonts/ionicons/css/ionicons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'sites_static/fonts/fontawesome/css/font-awesome.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'sites_static/fonts/flaticon/font/flaticon.css' %}">
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="{% static 'sites_static/css/style.css' %}">
+  </head>
+
+
+ url({% static 'sites_static/img/slider-1.jpg' %})

@@ -1,0 +1,26 @@
+
+{% extends 'base.html' %}
+
+{% block com %}
+
+<div class="section">
+    <div class="container">
+        <div class="row justify-content-center">
+          <h1>{{ meal_detail| title }}</h1>
+        </div>
+        <br>
+            <div class="row justify-content-center">
+
+
+
+
+            <h2>MEAL DESCRIPTION -:</h2>
+            <P>{{ meal_detail.description }}</P>
+
+            <img src="{{meal_detail.image.url }}" >
+
+
+        </div>
+    </div>
+</div>
+{% endblock %}
